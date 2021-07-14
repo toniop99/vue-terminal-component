@@ -8,6 +8,9 @@
     "type": "git",
     "url": "https://github.com/toniop99/vue-terminal-component.git"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/terminal.ssr.js",
   "browser": "dist/terminal.esm.js",
   "module": "dist/terminal.esm.js",
@@ -23,7 +26,8 @@
     "build": "cross-env NODE_ENV=production rollup --config rollup.config.js",
     "build:ssr": "cross-env NODE_ENV=production rollup --config rollup.config.js --format cjs",
     "build:es": "cross-env NODE_ENV=production rollup --config rollup.config.js --format es",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.js --format iife"
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config rollup.config.js --format iife",
+    "test": ""
   },
   "dependencies": {},
   "devDependencies": {
