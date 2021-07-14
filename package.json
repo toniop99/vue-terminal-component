@@ -1,6 +1,6 @@
 {
   "name": "@chapikas/vue-terminal-component",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "A beautiful terminal to use in your vue apps to make a better design or to implement great functionalities.",
   "license": "MIT",
   "private": false,
