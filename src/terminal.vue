@@ -252,6 +252,8 @@ $body-text-color: rgb(36, 170, 100, 1);
   min-width: 250px;
   min-height: 300px;
   max-height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: $terminal-background;
   color: $terminal-text-color;
   border-radius: 10px;
