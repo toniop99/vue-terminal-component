@@ -24,7 +24,7 @@ export function commandManager (command) {
       }
     },
     creat0r: {
-      name: 'creator',
+      name: 'creat0r',
       description: 'The creator of this beautiful terminal',
       execute: () => {
         return {
@@ -46,16 +46,35 @@ export function commandManager (command) {
           allowHtml: false
         }
       }
+    },
+    ls: {
+      name: 'ls',
+      description: 'List of all directories',
+      execute: () => {
+        return {
+          text:
+          'app  tests dev vendor',
+          color: 'orange',
+          allowHtml: false
+        }
+      }
     }
 
   }
 
-  if (!availableCommands[command]) {
+  if(!command.startsWith('/')) {
     return {
       text: `Unknown command: ${command} | Try help for a list of commands`,
       color: 'red'
     }
   }
 
-  return availableCommands[command].execute()
+  if (!availableCommands[command.substring(1)]) {
+    return {
+      text: `Unknown command: ${command} | Try help for a list of commands`,
+      color: 'red'
+    }
+  }
+
+  return availableCommands[command.substring(1)].execute()
 }

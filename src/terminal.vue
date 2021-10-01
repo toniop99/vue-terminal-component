@@ -102,7 +102,7 @@ export default {
 
     onMounted(() => {
       writehistoryLine({
-        text: "Type help to show all available commands",
+        text: "Type /help to show all available commands",
         color: "white",
       });
     });
