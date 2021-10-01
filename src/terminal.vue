@@ -332,8 +332,12 @@ $body-text-color: rgb(36, 170, 100, 1);
   .title {
     margin-left: 2em;
     display: flex;
+    margin-left: 200px;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow: 1px 0 1px black;
+
   }
 }
 
